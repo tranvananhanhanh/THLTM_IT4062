@@ -14,19 +14,7 @@ Sinh viên sẽ học cách:
 - Tra cứu tên miền → địa chỉ IP.
 - Tra cứu địa chỉ IP → tên miền (reverse DNS lookup).
 
----
 
-## 🧩 Cấu trúc chương trình
-
-```
-
-resolver/
-│
-├── resolver.c          # Mã nguồn chính của chương trình resolver
-├── Makefile (tuỳ chọn) # Dễ dàng biên dịch bằng lệnh make
-└── README.md            # Tài liệu hướng dẫn (file này)
-
-````
 
 ---
 
@@ -156,9 +144,7 @@ Cách khắc phục:
 * Ghi log kết quả ra file text.
 * Tích hợp multithreading để tra cứu song song nhiều địa chỉ.
 
-```
 
 ---
 
 
-```
