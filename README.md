@@ -18,9 +18,9 @@ Sẽ học cách:
 
 ---
 
-## ▶️ Cách chạy chương trình
+## Cách chạy chương trình
 
-### 1️⃣ Tra cứu tên miền
+### 1. Tra cứu tên miền
 
 ```bash
 $ ./resolver google.com
@@ -29,7 +29,7 @@ Alias name: www.google.com
 IP address: 142.250.199.46
 ```
 
-### 2️⃣ Tra cứu địa chỉ IP
+### 2. Tra cứu địa chỉ IP
 
 ```bash
 $ ./resolver 8.8.8.8
@@ -39,7 +39,7 @@ Alias name: 8.8.8.8.in-addr.arpa
 
 ---
 
-## 🧱 Giải thích mã nguồn
+##  Giải thích mã nguồn
 
 ### 1. Hàm kiểm tra địa chỉ IP hợp lệ
 
