@@ -2,9 +2,9 @@
 
 ---
 
-# 🧠 Thực hành Lập trình Resolver Mạng (Network Resolver)
+# Thực hành Lập trình Mạng 
 
-## 👋 Giới thiệu
+## Giới thiệu
 
 Bộ bài thực hành này gồm **2 phần** nhằm giúp làm quen với các hàm thư viện mạng trong C (socket, `gethostbyname`, `gethostbyaddr`, `inet_ntoa`, `inet_pton`, ...).  
 Sẽ học cách:
@@ -19,17 +19,6 @@ Sẽ học cách:
 ---
 
 ## ▶️ Cách chạy chương trình
-
-Chương trình có thể chạy với **tên miền hoặc địa chỉ IP** làm tham số đầu vào:
-
-```bash
-./resolver google.com
-./resolver 8.8.8.8
-```
-
----
-
-## 🧪 Ví dụ kết quả
 
 ### 1️⃣ Tra cứu tên miền
 
@@ -52,7 +41,7 @@ Alias name: 8.8.8.8.in-addr.arpa
 
 ## 🧱 Giải thích mã nguồn
 
-### 🔹 1. Hàm kiểm tra địa chỉ IP hợp lệ
+### 1. Hàm kiểm tra địa chỉ IP hợp lệ
 
 ```c
 int is_valid_ip(const char *ip) {
@@ -65,7 +54,7 @@ int is_valid_ip(const char *ip) {
 
 ---
 
-### 🔹 2. Hàm tra cứu tên miền
+### 2. Hàm tra cứu tên miền
 
 ```c
 struct hostent *host = gethostbyname(domain);
@@ -75,7 +64,7 @@ struct hostent *host = gethostbyname(domain);
 
 ---
 
-### 🔹 3. Hàm tra cứu IP (reverse lookup)
+### 3. Hàm tra cứu IP (reverse lookup)
 
 ```c
 struct hostent *host = gethostbyaddr(&addr, sizeof(addr), AF_INET);
@@ -85,7 +74,7 @@ struct hostent *host = gethostbyaddr(&addr, sizeof(addr), AF_INET);
 
 ---
 
-### 🔹 4. Xử lý lỗi "Invalid address"
+### 4. Xử lý lỗi "Invalid address"
 
 Nguyên nhân: nhập chuỗi tên miền chưa được chuẩn hóa hoặc không tồn tại.
 Cách khắc phục:
@@ -96,7 +85,7 @@ Cách khắc phục:
 
 ---
 
-## 🧰 Thư viện sử dụng
+## Thư viện sử dụng
 
 | Thư viện         | Mục đích                                           |
 | ---------------- | -------------------------------------------------- |
@@ -110,7 +99,7 @@ Cách khắc phục:
 
 ---
 
-## 🧠 Kiến thức rút ra
+## Kiến thức rút ra
 
 * Phân biệt được IP và hostname.
 * Biết cách tra cứu DNS bằng hàm C chuẩn.
@@ -119,17 +108,7 @@ Cách khắc phục:
 
 ---
 
-## 👨‍💻 Tác giả
-
-***Tên:** Trần Vân Anh
-***Lớp:** Thực hành LTM (Lập trình mạng)
-***Ngôn ngữ:** C
-***Môi trường:** macOS / Linux
-***Ngày cập nhật:** 06/10/2025
-
----
-
-## 📘 Gợi ý mở rộng
+## Gợi ý mở rộng
 
 * Thêm tùy chọn giao diện dòng lệnh nâng cao (`getopt`).
 * Hỗ trợ IPv6 (`AF_INET6`).
