@@ -2,13 +2,12 @@
 
 ---
 
-```markdown
 # 🧠 Thực hành Lập trình Resolver Mạng (Network Resolver)
 
 ## 👋 Giới thiệu
 
-Bộ bài thực hành này gồm **2 phần** nhằm giúp sinh viên làm quen với các hàm thư viện mạng trong C (socket, `gethostbyname`, `gethostbyaddr`, `inet_ntoa`, `inet_pton`, ...).  
-Sinh viên sẽ học cách:
+Bộ bài thực hành này gồm **2 phần** nhằm giúp làm quen với các hàm thư viện mạng trong C (socket, `gethostbyname`, `gethostbyaddr`, `inet_ntoa`, `inet_pton`, ...).  
+Sẽ học cách:
 - Kiểm tra tính hợp lệ của địa chỉ IP.
 - Phân biệt địa chỉ đặc biệt (loopback, private, multicast...).
 - Tra cứu tên miền → địa chỉ IP.
@@ -16,13 +15,6 @@ Sinh viên sẽ học cách:
 
 
 
----
-
-## ⚙️ Cách biên dịch
-
-```bash
-gcc resolver.c -o resolver
-````
 
 ---
 
@@ -129,11 +121,11 @@ Cách khắc phục:
 
 ## 👨‍💻 Tác giả
 
-**Tên:** Trần Vân Anh
-**Lớp:** Thực hành LTM (Lập trình mạng)
-**Ngôn ngữ:** C
-**Môi trường:** macOS / Linux
-**Ngày cập nhật:** 06/10/2025
+***Tên:** Trần Vân Anh
+***Lớp:** Thực hành LTM (Lập trình mạng)
+***Ngôn ngữ:** C
+***Môi trường:** macOS / Linux
+***Ngày cập nhật:** 06/10/2025
 
 ---
 
